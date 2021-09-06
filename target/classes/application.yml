@@ -1,0 +1,16 @@
+server:
+  port: 8761
+eureka:
+  instance:
+    prefer-ip-address: false
+    leaseRenewalIntervalInSeconds: 10
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  renewalPercentThreshold: 0.85
+
+        
+logging:
+  level: 
+    root: WARN
+    org.springframework: WARN
